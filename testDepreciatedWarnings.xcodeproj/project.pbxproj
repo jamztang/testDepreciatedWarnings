@@ -49,6 +49,7 @@
 		1ACC6A99231E4A2F00F4A5C9 /* testDepreciatedWarningsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testDepreciatedWarningsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACC6A9D231E4A2F00F4A5C9 /* testDepreciatedWarningsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDepreciatedWarningsUITests.swift; sourceTree = "<group>"; };
 		1ACC6A9F231E4A2F00F4A5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ACC6AAB231E4B4500F4A5C9 /* testDepreciatedWarnings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testDepreciatedWarnings.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		1ACC6A7A231E4A2E00F4A5C9 /* testDepreciatedWarnings */ = {
 			isa = PBXGroup;
 			children = (
+				1ACC6AAB231E4B4500F4A5C9 /* testDepreciatedWarnings.entitlements */,
 				1ACC6A7B231E4A2E00F4A5C9 /* AppDelegate.swift */,
 				1ACC6A7D231E4A2E00F4A5C9 /* SceneDelegate.swift */,
 				1ACC6A7F231E4A2E00F4A5C9 /* ViewController.swift */,
@@ -434,7 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testDepreciatedWarnings/testDepreciatedWarnings.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = testDepreciatedWarnings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testDepreciatedWarnings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,7 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testDepreciatedWarnings/testDepreciatedWarnings.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = testDepreciatedWarnings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testDepreciatedWarnings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
